@@ -19,14 +19,16 @@
  */
 
 var twoSum = function(nums, target) {
+  //loop through nums array,
   let compliments = [];
-  for(i in nums) {
-
-      if(compliments[nums[i]] !== undefined ) {
-          return [Number(compliments[nums[i]]), Number(i)];
-      } else {
-          compliments[target - nums[i]] = i;
-      } 
-
+  for (i in nums) {
+    //if compliment is found, we have a match and can return the stored index value
+    //of compliments array and the current loop index
+    if (compliments[nums[i]] !== undefined) {
+      return [Number(compliments[nums[i]]), Number(i)];
+    } else {
+      //push compliment into array with value of index 
+      compliments[target - nums[i]] = i;
+    }
   }
 };
