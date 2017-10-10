@@ -14,10 +14,10 @@
 // Example:
 // Input: ["5","2","C","D","+"]
 // Output: 30
-// Explanation: 
+// Explanation:
 // Round 1: You could get 5 points. The sum is: 5.
 // Round 2: You could get 2 points. The sum is: 7.
-// Operation 1: The round 2's data was invalid. The sum is: 5.  
+// Operation 1: The round 2's data was invalid. The sum is: 5.
 // Round 3: You could get 10 points (the round 2's data has been removed). The sum is: 15.
 // Round 4: You could get 5 + 10 = 15 points. The sum is: 30.
 
@@ -29,27 +29,49 @@
  */
 
 var calPoints = function(ops) {
-  let value, sum = 0;
-  for(let i = 0; i < ops.length; i++){
-      value = ops[i];
-      
-      if(value === "C"){
-          value = ops[i-1]*-1;
-          ops.splice(i-1, 2);
-          i -= 2;
-      } else if(value === "D") {
-          value = ops[i-1]*2;
-          ops[i] = value;
-      } else if (value === "+"){
-          value = ops[i-1] + ops[i-2];
-          ops[i] = value;
-      } else {
-          value = parseInt(value);
-          ops[i] = value;
-      }
-           
-      sum += value;
+  //init variables
+  let value,
+    sum = 0;
+
+  //loop through ops -- constantly check against length since length could change
+  //through the loop
+  for (let i = 0; i < ops.length; i++) {
+    value = ops[i];
+
+    if (value === "C") {
+      //grab opposite of last valid input
+      value = ops[i - 1] * -1;
+
+      //remove current index and previous from ops
+      ops.splice(i - 1, 2);
+
+      //set i back 2, when loop cycles through to top, 1 will be added back to i
+      i -= 2;
+    } else if (value === "D") {
+      //grab two times last valid input
+      value = ops[i - 1] * 2;
+
+      //set the value at this index to be the result of the operation above
+      //this is fine because we are not particularly interested in "D" but rather what it represents
+      ops[i] = value;
+    } else if (value === "+") {
+      //grab last two valid inputs
+      value = ops[i - 1] + ops[i - 2];
+
+      //set value to result of operation
+      //see reasoning above
+      ops[i] = value;
+    } else {
+      //grab value and make into int
+      value = parseInt(value);
+
+      //save int over string
+      ops[i] = value;
+    }
+
+    //add value
+    sum += value;
   }
-  
+
   return sum;
 };
