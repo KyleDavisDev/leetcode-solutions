@@ -24,7 +24,7 @@
 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)                                                                          |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/3Sum%20Closest/solution.js)                                                    |    89.12%    |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)                                                                    |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Add%20Two%20Numbers/solution.js)                                               |    70.34%    |
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)      |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Longest%20Substring%20Without%20Repeating%20Characters/solution.js)            |    87.71%    |
-| [Move Zeros](https://leetcode.com/problems/move-zeroes/description/)                                                                             |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Moving%20Zeroes/solution.js)                                                   |    93.56%    |
+| [Move Zeros](https://leetcode.com/problems/move-zeroes/description/)                                                                             |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Move%20Zeroes/solution.js)                                                   |    93.56%    |
 
 
 # Databases
