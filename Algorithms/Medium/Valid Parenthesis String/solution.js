@@ -29,7 +29,12 @@
  * @return {boolean}
  */
 
+//The method used in this solution is to set up a 'range' of possible values.
+// '(' will increase lower and upper bound
+// ')' will decrease upper and lower bound, but not past zero
+// '*' is a wildcard so upper should increase and lower should decrease, but not past zero
 var checkValidString = function(s) {
+  //check easy stuff immediately
   if (s.length === 0) {
     return true;
   }
@@ -37,28 +42,33 @@ var checkValidString = function(s) {
     return false;
   }
 
+  //init lower and upper bound variables
   let low = 0,
     big = 0;
+  //loop through s
   for (let i = 0, len = s.length; i < len; i++) {
-    if (s[i] === "(") {
+    
+    
+    if (s[i] === "(") {//increase upper and lower
       low++;
       big++;
-    } else if (s[i] === ")") {
+    } else if (s[i] === ")") { //decrease upper and lower but not past zero
       if (low > 0) {
         low--;
       }
       big--;
-    } else {
+    } else { //increase upper, descrease lower but not past zero
       if (low > 0) {
         low--;
       }
       big++;
     }
 
-    if (big < 0) {
+    if (big < 0) { // this will be true if there are too many ')' and no way to pair them up
       return false;
     }
   }
 
+  //with the setup, low should equal zero if all the pairs are met
   return low === 0;
 };
