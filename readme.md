@@ -27,6 +27,7 @@
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)      |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Longest%20Substring%20Without%20Repeating%20Characters/solution.js)            |    87.71%    |
 | [Move Zeros](https://leetcode.com/problems/move-zeroes/description/)                                                                             |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Move%20Zeroes/solution.js)                                                     |    93.56%    |
 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)                                                  |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Valid%20Parenthesis%20String/solution.js)                                      |    87.10%    |
+| [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)                                                                        |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Map%20Sum%20Pairs/solution.js)                                                 |    90.24%    |
 
 
 # Databases
