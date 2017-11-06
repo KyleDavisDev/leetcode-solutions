@@ -28,52 +28,70 @@
  * @return {number[][]}
  */
 var imageSmoother = function(M) {
+  //init array to hold "smoothed" values
   const smoothArr = [];
 
+  //loop through M
   for (let i = 0, len = M.length; i < len; i++) {
+    //init each index as array so we can set smootharr[i][j] values
     smoothArr[i] = [];
 
+    //loop through M subarray
     for (let j = 0, length = M[i].length; j < length; j++) {
+      //going to add values through each of the surround positions
+      //and divide by the total number of positions added
+
+      //reset/init values
       let nums = 0;
       let count = 0;
 
+      //check if top left of the current position exists and add value
       if (i - 1 >= 0 && j - 1 >= 0) {
         nums += M[i - 1][j - 1];
         count++;
       }
+      //check if top of current position exists and add value
       if (i - 1 >= 0) {
         nums += M[i - 1][j];
         count++;
       }
+      //check if top right of current position exists and add value
       if (i - 1 >= 0 && j + 1 < length) {
         nums += M[i - 1][j + 1];
         count++;
       }
+      //check if left of current position exists and add value
       if (j - 1 >= 0) {
         nums += M[i][j - 1];
         count++;
       }
 
+      //check current position values
       nums += M[i][j];
       count++;
 
+      //check if right of current position exists and add value
       if (j + 1 < length) {
         nums += M[i][j + 1];
         count++;
       }
+      //check if bottom left of current position exists and add value
       if (i + 1 < len && j - 1 >= 0) {
         nums += M[i + 1][j - 1];
         count++;
       }
+      //check if bottom of current position exists and add value
       if (i + 1 < len) {
         nums += M[i + 1][j];
         count++;
       }
+      //check if bottom right of current position exists and add value
       if (i + 1 < len && j + 1 < length) {
         nums += M[i + 1][j + 1];
         count++;
       }
 
+      //push floored average to smoothArr and move on
       smoothArr[i][j] = Math.floor(nums / count);
     }
   }
