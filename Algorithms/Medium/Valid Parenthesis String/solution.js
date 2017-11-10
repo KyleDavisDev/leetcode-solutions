@@ -47,24 +47,26 @@ var checkValidString = function(s) {
     big = 0;
   //loop through s
   for (let i = 0, len = s.length; i < len; i++) {
-    
-    
-    if (s[i] === "(") {//increase upper and lower
+    if (s[i] === "(") {
+      //increase upper and lower
       low++;
       big++;
-    } else if (s[i] === ")") { //decrease upper and lower but not past zero
+    } else if (s[i] === ")") {
+      //decrease upper and lower but not past zero
       if (low > 0) {
         low--;
       }
       big--;
-    } else { //increase upper, descrease lower but not past zero
+    } else {
+      //increase upper, descrease lower but not past zero
       if (low > 0) {
         low--;
       }
       big++;
     }
 
-    if (big < 0) { // this will be true if there are too many ')' and no way to pair them up
+    if (big < 0) {
+      // this will be true if there are too many ')' and no way to pair them up
       return false;
     }
   }
