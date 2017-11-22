@@ -9,19 +9,27 @@
 
 // --------------------------------------------------------
 
+// Note: Since the decription is not very clear, it's worth stating that
+// the problem is looking for you to find all all of the numbers that shared
+// between both arrays but do not return duplicates.
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}
  */
 var intersection = function(nums1, nums2) {
+  //check if either are empty right away
   if (nums1.length === 0 || nums2.length === 0) {
     return [];
   }
 
+  //init array
   const intersect = [];
 
+  //loop through first num1
   for (let i = 0, len = nums1.length; i < len; i++) {
+    //if number is in second array AND not already in our intersection array, push
+    //to the intersection array
     if (nums2.indexOf(nums1[i]) !== -1 && intersect.indexOf(nums1[i]) === -1) {
       intersect.push(nums1[i]);
     }
