@@ -20,5 +20,7 @@
  * @return {number}
  */
 var strStr = function(haystack, needle) {
+  // I'm not sure if they were looking for a solution with loops and whatnot but
+  // there is a string method made specifically for question....
   return haystack.indexOf(needle);
 };
