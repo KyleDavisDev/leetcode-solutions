@@ -41,19 +41,28 @@
  * @return {TreeNode}
  */
 var mergeTrees = function(t1, t2) {
+  //if both null then just return
   if (!t1 && !t2) return null;
 
+  //get the appropriate val for combining nodes
+  //if node exits, get the val or else get 0
   const t1Val = t1 ? t1.val : 0;
   const t2Val = t2 ? t2.val : 0;
+  //add vals together to create node
   const node = new TreeNode(t1Val + t2Val);
 
+  //check if node exists and grab left branch or null
   const t1Left = t1 ? t1.left : null;
   const t2Left = t2 ? t2.left : null;
+  //recurssive call with the left branches
   node.left = mergeTrees(t1Left, t2Left);
 
+  //check if node exists and grab right branch or null
   const t1Right = t1 ? t1.right : null;
   const t2Right = t2 ? t2.right : null;
+  //recursive call with right branch
   node.right = mergeTrees(t1Right, t2Right);
 
+  //return our built tree
   return node;
 };
