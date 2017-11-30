@@ -47,6 +47,7 @@
 | [Move Zeros](https://leetcode.com/problems/move-zeroes/description/)                                                                             |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Move%20Zeroes/solution.js)                                                     |    93.56%    |
 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)                                                          |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Odd%20Even%20Linked%List/solution.js)                                          |    100.00%   |
 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)                                                  |    Medium   | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Medium/Valid%20Parenthesis%20String/solution.js)                                      |    87.10%    |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                            |    Hard     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Hard/Median%20of%20Two%20Sorted%20Arrays/solution.js)                                 |    92.05%    |
 
 
 # Databases
