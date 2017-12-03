@@ -29,14 +29,24 @@
  * @return {TreeNode}
  */
 var convertBST = function(root) {
+  //adder will hold the value we need to add to each node
   let adder = 0;
+  //shorthand for: if root is truthy, execute addToNode function
   root && addToNode(root);
   return root;
 
+  //function declaration because we dont necessarily need to return anything. Function is inside converBST scope to have access to adder variable. This function is a DFS going down the right side of the tree first.
   function addToNode(root) {
+    //if root.right exists, recursive call function
     root.right && addToNode(root.right);
+
+    //add adder to the node's current value
     root.val += adder;
+
+    //set adder the new node's value. This will cause adder to now hold the value of every node whose value is greater than the current node
     adder = root.val;
+
+    //iff root.left exists, recursive call function
     root.left && addToNode(root.left);
   }
 };
