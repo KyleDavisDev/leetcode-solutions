@@ -31,7 +31,7 @@ var hammingDistance = function(x, y) {
   return len;
 };
 
-OR;
+// OR
 
 var hammingDistance = function(x, y) {
   return (x ^ y)
