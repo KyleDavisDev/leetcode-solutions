@@ -25,8 +25,10 @@
  * @return {character}
  */
 var findTheDifference = function(s, t) {
+  //if s is empty, t will have length 1 and we can just return that value
   if (t.length === 1) return t[0];
 
+  //split input strings into arrays and iterate over each element to get combined ascii values
   s = s.split("").reduce(function(accum, cur) {
     return accum + cur.charCodeAt(0);
   }, 0);
@@ -34,5 +36,6 @@ var findTheDifference = function(s, t) {
     return accum + cur.charCodeAt(0);
   }, 0);
 
+  //find difference between values and convert that back to string
   return String.fromCharCode(t - s);
 };

@@ -42,19 +42,31 @@
  * @return {number[][]}
  */
 var matrixReshape = function(nums, r, c) {
+  // Grab the parameters of the original matrix
   const row = nums.length,
     col = nums[0].length;
+
+  // Check to see if conversion to the new matrix is even possible
   if (row * col !== r * c) return nums;
 
+  // New matrix
   const arr = [];
 
+  // Loop through all rows of orig matrix
   for (let i = 0; i < row; i++) {
+    // Loop through all cols of orig matrix
     for (let j = 0; j < col; j++) {
+      // Determine which row we should be in for the new matrix based on how far we are, currently, inside the orig matrix compared to the size of each row in new matrix
       let arrRow = Math.floor((i * col + j) / c);
+
+      // Create a new row inside of the new matrix if need be
       if (!arr[arrRow]) arr.push([]);
+
+      // Push col element into new matrix
       arr[arrRow].push(nums[i][j]);
     }
   }
 
+  // Return newly-shaped matrix
   return arr;
 };

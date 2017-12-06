@@ -22,25 +22,33 @@
  * @param {number[]} nums
  * @return {number}
  */
+// Solution is in O(n) time
 var findLengthOfLCIS = function(nums) {
+  // Get array length and check if valid or not
   const len = nums.length;
   if (len === 0 || len === 1) {
     return len;
   }
 
+  // Loop through to find the number of times, consecutively, an array element is greater than the element right before it
+  // This number is not our solution but is close.
   let count = 0;
   let temp = 0;
   for (let i = 1; i < len; i++) {
+    // Compare current element with the one prior and adjust "temp" accordingly
     if (nums[i] > nums[i - 1]) {
       temp++;
 
+      // If temp is greater than our longest chain of consecutive numbers, set "count" to "temp"
       if (temp > count) {
         count = temp;
       }
     } else {
+      // Reset temp
       temp = 0;
     }
   }
 
+  // Need to increase "count" by one to get the actual number of consecutive numbers
   return ++count;
 };
