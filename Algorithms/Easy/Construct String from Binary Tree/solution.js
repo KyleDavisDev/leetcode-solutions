@@ -41,17 +41,23 @@
  * @return {string}
  */
 var tree2str = function(t) {
+  //check easy case
   if (t === null) return "";
 
+  //grab node value
   let str = t.val + "";
 
+  //check to see if node has a left or right value so we know if we need to do more recursion or not.
   if (t.right || t.left) {
+    //execute recursion left first and add appropriate string values
     str += "(" + tree2str(t.left) + ")";
 
+    //check right next and, similiary, add appropriate string values
     if (t.right) {
       str += "(" + tree2str(t.right) + ")";
     }
   }
 
+  //return the concatinated str
   return str;
 };

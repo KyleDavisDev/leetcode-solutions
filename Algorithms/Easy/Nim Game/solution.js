@@ -18,6 +18,7 @@
  * @return {boolean}
  */
 
+//With all players playing optimally, the only way to for us to win is for the initial stone count to not be a multiple of 4
 var canWinNim = function(n) {
   return n % 4 !== 0;
 };
