@@ -23,17 +23,24 @@
  * @param {string} magazine
  * @return {boolean}
  */
+//We are going to check each character in ransomeNote string against magazine array to see if the charactor exists inside of the array.
+//If the charactor does not, we can stop right there and return false. If it does, we should remove that array element and continue checking.
 const canConstruct = (ransomNote, magazine) => {
+  //check edge cases first
   if (!ransomNote) return true;
   if (ransomNote.length > magazine.length) return false;
 
+  //split string to array so we have access to .splice method
   magazine = magazine.split("");
 
+  //loop through ransomeNote
   for (let i = 0, len = ransomNote.length; i < len; i++) {
+    //get the index of where the character is inside of array
     const ind = magazine.indexOf(ransomNote[i]);
 
+    //ind === -1 if the character is NOT found in array
     if (ind === -1) return false;
-    else magazine.splice(ind, 1);
+    else magazine.splice(ind, 1); //remove from array
   }
 
   return true;
