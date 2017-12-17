@@ -23,19 +23,17 @@
  * @param {string} magazine
  * @return {boolean}
  */
-var canConstruct = function(ransomNote, magazine) {
-  ransomNote = ransomNote.split("");
+const canConstruct = (ransomNote, magazine) => {
+  if (!ransomNote) return true;
+  if (ransomNote.length > magazine.length) return false;
+
   magazine = magazine.split("");
 
   for (let i = 0, len = ransomNote.length; i < len; i++) {
-    const loc = magazine.findIndex(function(x) {
-      return x === ransomNote[i];
-    });
+    const ind = magazine.indexOf(ransomNote[i]);
 
-    if (loc === -1) {
-      return false;
-    }
-    magazine.splice(loc, 1);
+    if (ind === -1) return false;
+    else magazine.splice(ind, 1);
   }
 
   return true;
