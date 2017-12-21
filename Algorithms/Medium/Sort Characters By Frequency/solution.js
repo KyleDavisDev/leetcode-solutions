@@ -37,10 +37,19 @@
  * @param {string} s
  * @return {string}
  */
+//We are going count the number of times each letter appears in the string
+//Sort the number of times in desc order
+//Construct string based on letter and frequency
 var frequencySort = function(s) {
+  //empty object to hold letters and their respective counts
   let obj = {};
+
+  //split string to array so we can use .forEach method
+  //if letter exists in object, incriment count by 1, else set value to 1.
   s.split("").forEach(v => (obj[v] ? obj[v]++ : (obj[v] = 1)));
 
+  //sort keys by letter frequency
+  //construct string from letter and frequency
   return Object.keys(obj)
     .sort((a, b) => obj[b] - obj[a])
     .reduce((accum, cur) => {
