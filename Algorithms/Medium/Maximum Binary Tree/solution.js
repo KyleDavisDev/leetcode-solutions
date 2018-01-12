@@ -11,7 +11,7 @@
 // Construct the maximum tree by the given array and output the root node of this tree.
 
 // Example:
-Input: [3, 2, 1, 6, 0, 5];
+// Input: [3, 2, 1, 6, 0, 5];
 // Output: return the tree root node representing the following tree:
 //       6
 //     /   \
