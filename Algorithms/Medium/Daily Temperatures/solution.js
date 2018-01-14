@@ -14,12 +14,19 @@
  * @param {number[]} temperatures
  * @return {number[]}
  */
-var dailyTemperatures = function (temp) {
+//For this solution, we will go through array and compare value to it's righthand neighbor. We will continue comparing to neighbors so long as the right-hand value is less than the initial value. Once this condition is not met, we will save the number of successful comparisons to an array.
+var dailyTemperatures = function(temp) {
+  //count will be our counter which incriments every successful comparison
+  //arr will hold our results
   let count;
   const arr = [];
+  //loop through temp array
   for (let i = 0, len = temp.length; i < len; i++) {
+    //reset count
     count = 1;
+    //loop through right-hand side of the temp array
     for (let j = i + 1; j < len; j++) {
+      //incriment count if current value is greater than comparison value or else assign the current count variable to our results array and break from loop.
       if (temp[i] >= temp[j]) {
         count++;
       } else {
@@ -28,6 +35,8 @@ var dailyTemperatures = function (temp) {
       }
     }
 
+    //Assign 0 as value if no value got assigned from above.
+    //This will be the case, like in the given example, if there are no values greater than the current.
     if (!arr[i]) arr[i] = 0;
   }
   return arr;
