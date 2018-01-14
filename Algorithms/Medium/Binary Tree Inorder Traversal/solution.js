@@ -27,21 +27,30 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+
+//For this solution, we will create a depth-first search through the tree and store values as we go along.
 var inorderTraversal = function(root) {
+  //elimate edge cases first
   if (root === null) return [];
   if (root.length === 0) return root;
 
+  //arr will hold our result, stack will help us to traverse through root in order
   const stack = [],
     arr = [];
 
+  //loop through until all nodes are checked
   while (root !== null || stack.length > 0) {
+    //go all the way to left-most node and insert nodes into stack so we can retrace later
     while (root) {
       stack.push(root);
       root = root.left;
     }
 
+    //assign root back to the deep-most node
     root = stack.pop();
+    //push root value to result array
     arr.push(root.val);
+    //go to right node next
     root = root.right;
   }
 
