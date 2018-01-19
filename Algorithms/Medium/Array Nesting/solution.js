@@ -24,22 +24,38 @@
  * @param {number[]} nums
  * @return {number}
  */
+//This algo runs through the nums array and 'marks' indexes as visited and continues traversal.
+//if we land on a 'marked' index, we stop. Each time we visit an unvisited index, we increase our count value.
+//One of the reasons why this algo works is because all of the A elements are distinct.
 var arrayNesting = function (nums) {
+  //check easy edge case
   if (nums.length === 1) return 1;
 
+  //max will hold the highest chain we find
+  //count will incriment and be compared to max
+  //temp and index will help us in marking indexes
   let max = count = 0;
-  let temp;
+  let temp, index;
 
+  //loop through array
   for (let i = 0, len = nums.length; i < len; i++) {
+    //check to make sure value has not already been visited
     if (nums[i] != -1) {
+      //save index as the starting i value to begin looping through
       index = i;
+      //loop until we find visited index
       while (nums[index] != -1) {
+        //set index value to -1 and move index to the next value
         temp = nums[index];
         nums[index] = -1;
         index = temp;
+
+        //incriment count
         count++;
       }
+      //save highest value
       max = max > count ? max : count;
+      //reset count
       count = 0;
     }
   }
