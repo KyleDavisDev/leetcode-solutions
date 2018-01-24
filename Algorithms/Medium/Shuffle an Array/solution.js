@@ -24,6 +24,7 @@
  * @param {number[]} nums
  */
 var Solution = function (nums) {
+  //assign nums or set to empty array
   this.nums = nums || [];
 };
 
@@ -32,6 +33,7 @@ var Solution = function (nums) {
 * @return {number[]}
 */
 Solution.prototype.reset = function () {
+  //return original input or [] (if input was falsy)
   return this.nums;
 };
 
@@ -39,12 +41,17 @@ Solution.prototype.reset = function () {
 * Returns a random shuffling of the array.
 * @return {number[]}
 */
+
 Solution.prototype.shuffle = function () {
+  //check to make sure there are actual numbers inside nums property
   if (this.nums.length === 0) return this.nums;
 
+  //make duplicate of array (arr has a seperate pointer from this.nums as this point)
   const arr = this.nums.slice();
+  //get length and set temp variables
   var m = arr.length, t, i;
 
+  //The following is the Fisher-Yates randomize algorithm. This is NOT my algorithm but rather a javascript implimentation of said algorithm
   // While there remain elements to shuffle…
   while (m > 0) {
     // Pick a remaining element…
