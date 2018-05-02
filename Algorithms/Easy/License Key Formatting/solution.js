@@ -24,30 +24,38 @@
 // --------------------------------------------------------
 
 /**
+ * @description Loop through S backwards while continuously pushing letters in front of return string
  * @param {string} S
  * @param {number} K
  * @return {string}
  */
 const licenseKeyFormatting = (S, K) => {
+  // Initialize our results and counting variables
   let res = "";
   let count = 0;
+
+  // Tranform entire string to uppercase
   S = S.toUpperCase();
 
+  // Loop through S backwards
   for (let i = S.length - 1; i >= 0; i--) {
-    //console.log(res, S[i]);
 
-
+    // We are only going to take action if the S[i] charactor is not a dash
     if (S[i] !== "-") {
 
+      // Check if we need to add a dash or not
+      // Add a dash in front of res and reset count
       if (count === K) {
         res = "-" + res;
         count = 0;
       }
 
+      // Add letter in front of res and incriment count
       res = S[i] + res;
       count++;
     }
   }
 
+  // Return string
   return res;
 };
