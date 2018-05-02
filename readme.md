@@ -3,7 +3,7 @@
         <img height=85 src="https://discuss.leetcode.com/assets/uploads/system/site-logo.png?v=qgb1lp804jg">
     </a>
     <br>Efficient solutions to LeetCode problems using JavaScript
-    <br>% column refers to the efficiency of the algorithm when compared to other submissions.
+    <br>% column refers to the efficiency of the algorithm when compared to other submissions at the time of submission
 </p>
 
 * [Algorithms](#algorithms)
@@ -31,6 +31,7 @@
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)                                                                |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Jewels%20and%20Stones/solution.js)                                               |    N/A       |
 | [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/description/)                                                              |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Judge%20Route%20Circle/solution.js)                                              |    99.86%    |
 | [Keyboard Row](https://leetcode.com/problems/keyboard-row/description/)                                                                          |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Keyboard%20Row/solution.js)                                                      |    69.07%    |
+| [License Key Formatting](https://leetcode.com/problems/license-key-formatting/description/)                                                      |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/License%20Key%20Formatting/solution.js)                                          |    94.57%    |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)                                                                |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Linked%20List$20Cycle/solution.js)                                               |    82.01%    |
 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/)                |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Longest%20Continuous%20Increasing%20Subsequence/solution.js)                     |    98.79%    |
 | [Majority Element](https://leetcode.com/problems/majority-element/description/)                                                                  |    Easy     | [solution.js](https://github.com/KyleBonar/leetcode-solutions/blob/master/Algorithms/Easy/Majority%20Element/solution.js)                                                  |    88.04%    |
