@@ -20,18 +20,25 @@
 // --------------------------------------------------------
 
 /**
+ * @description Going from bottom to top, prograte the minimum sum all the way to the top. Once the propagation is complete, grab top element.
  * @param {number[][]} triangle
  * @return {number}
  */
 const minimumTotal = triangle => {
+  // Simple gate clause
   if (triangle.length === 1) {
     return triangle[0][0];
   }
+
+  // Start from second-to-last row.
   for (let i = triangle.length - 2; i > -1; i--) {
+    // Start from left and go to end.
     for (let j = 0, len = triangle[i].length; j < len; j++) {
+      // Relace spot in triangle with the minimum sum of the two possibile adjacent numbers
       triangle[i][j] += Math.min(triangle[i + 1][j], triangle[i + 1][j + 1]);
     }
   }
 
+  // Return minimum-propogated number
   return triangle[0][0];
 };
