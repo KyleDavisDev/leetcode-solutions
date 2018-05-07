@@ -29,5 +29,8 @@
  * @return {string}
  */
 const customSortString = (S, T) => {
+  // 1. Split T into array
+  // 2. Sort T by referencing string S
+  // 3. Join back to string.
   return T.split('').sort((a, b) => S.indexOf(a) - S.indexOf(b)).join('');
 };
