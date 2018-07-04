@@ -29,9 +29,31 @@
  * @return {number[][]}
  */
 const flipAndInvertImage = A => {
+  // map over each row
   return A.map(row => {
-    return row.reverse().map(invert => {
-      return invert === 1 ? 0 : 1;
+    // First, reverse each row, then map over each individual item item
+    return row.reverse().map(val => {
+      // 'Invert' each value
+      return val === 1 ? 0 : 1;
     });
+  });
+};
+
+// OR possibly faster solution by combining the reverse() and .map into one:
+
+const flipAndInvertImage = A => {
+  // Map over each row
+  return A.map(row => {
+    // Init new array to push into
+    const res = [];
+    // Get the length of each row (Maybe this is same for each row, not sure...)
+    const len = row.length - 1;
+    // Loop through row
+    row.forEach((val, ind, arr) => {
+      // Push reversed val and, at the same time, invert the value
+      res.push(arr[len - ind] === 1 ? 0 : 1);
+    });
+    // Return the result array
+    return res;
   });
 };
