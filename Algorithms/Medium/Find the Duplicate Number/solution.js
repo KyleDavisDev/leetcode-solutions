@@ -26,10 +26,13 @@
  * @return {number}
  */
 const findDuplicate = nums => {
+  // initialize set bc we don't need a value assigned with each key
   const set = new Set();
 
   for (let i = 0, len = nums.length; i < len; i++) {
+    // If the number isn't in the set, push it into the set
     if (!set.has(nums[i])) set.add(nums[i]);
+    // Else return the first duplicated number
     else return nums[i];
   }
 };
