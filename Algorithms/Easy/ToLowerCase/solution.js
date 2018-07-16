@@ -22,3 +22,29 @@ const toLowerCase = str => {
     })
     .join("");
 };
+
+// OR if the str has multiple words, the above wont work.
+
+/**
+ * @param {string} str
+ * @return {string}
+ */
+const toLowerCase = str => {
+  // Change sentence into array of words
+  return str
+    .split(" ")
+    .map(word => {
+      // Split word in array of letters
+      return word
+        .split("")
+        .map(letter => {
+          // Same as above
+          const code = letter.charCodeAt(0);
+          return code > 64 && code < 91
+            ? String.fromCharCode(code + 32)
+            : letter;
+        })
+        .join("");
+    })
+    .join(" ");
+};
