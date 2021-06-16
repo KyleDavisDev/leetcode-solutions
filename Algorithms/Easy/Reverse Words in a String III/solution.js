@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a string, you need to reverse the order of characters in each word

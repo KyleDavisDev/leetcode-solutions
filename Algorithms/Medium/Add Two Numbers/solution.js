@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // You are given two non-empty linked lists representing two non-negative integers.

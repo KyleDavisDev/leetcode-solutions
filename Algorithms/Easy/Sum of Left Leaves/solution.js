@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Find the sum of all left leaves in a given binary tree.

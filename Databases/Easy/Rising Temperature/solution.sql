@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:

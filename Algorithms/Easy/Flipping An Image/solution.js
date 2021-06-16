@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // // Description:
 // Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.

@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Write an algorithm to determine if a number is "happy".

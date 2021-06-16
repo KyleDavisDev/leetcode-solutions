@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:

@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // You are given a license key represented as a string S which consists only alphanumeric character and dashes. The string is separated into N+1 groups by N dashes.
@@ -12,7 +12,7 @@
 // Explanation: The string S has been split into two parts, each part has 4 characters.
 // Note that the two extra dashes are not needed and can be removed.
 
-// Example: 
+// Example:
 // Input: S = "2-5g-3-J", K = 2
 // Output: "2-5G-3J"
 // Explanation: The string S has been split into three parts, each part has 2 characters except the first part as it could be shorter as mentioned above.

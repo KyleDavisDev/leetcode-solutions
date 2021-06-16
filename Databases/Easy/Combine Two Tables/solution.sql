@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -29,7 +29,7 @@
 
 -- --------------------------------------------------------
 
-SELECT Person.FirstName, Person.LastName, Address.City, Address.State 
-FROM Person 
-LEFT JOIN Address 
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State
+FROM Person
+LEFT JOIN Address
 ON Person.PersonId = Address.PersonId;

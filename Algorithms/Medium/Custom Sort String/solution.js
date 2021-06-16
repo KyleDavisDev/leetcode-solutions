@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // S and T are strings composed of lowercase letters. In S, no letter occurs more than once.
@@ -7,12 +7,12 @@
 // Return any permutation of T (as a string) that satisfies this property.
 
 // Example :
-// Input: 
+// Input:
 // S = "cba"
 // T = "abcd"
 // Output: "cbad"
-// Explanation: 
-// "a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a". 
+// Explanation:
+// "a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a".
 // Since "d" does not appear in S, it can be at any position in T. "dcba", "cdba", "cbda" are also valid outputs.
 
 

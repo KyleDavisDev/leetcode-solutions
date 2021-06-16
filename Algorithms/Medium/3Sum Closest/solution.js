@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given an array S of n integers, find three integers in S such that the sum is closest
@@ -19,7 +19,7 @@
  */
 
 var threeSumClosest = function(nums, target) {
-  
+
 
   //sort array from smallest to biggest
   nums = nums.sort(function(a, b) {

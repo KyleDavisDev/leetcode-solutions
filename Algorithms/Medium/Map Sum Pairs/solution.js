@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Implement a MapSum class with insert, and sum methods.
@@ -21,8 +21,8 @@ var MapSum = function() {
   this.hash = {};
 };
 
-/** 
-* @param {string} key 
+/**
+* @param {string} key
 * @param {number} val
 * @return {void}
 */
@@ -30,7 +30,7 @@ MapSum.prototype.insert = function(key, val) {
   this.hash[key] = val;
 };
 
-/** 
+/**
 * @param {string} prefix
 * @return {number}
 */
@@ -42,11 +42,11 @@ MapSum.prototype.sum = function(prefix) {
           sum += this.hash[keys[i]];
       }
   }
-  
+
   return sum;
 };
 
-/** 
+/**
 * Your MapSum object will be instantiated and called as such:
 * var obj = Object.create(MapSum).createNew()
 * obj.insert(key,val)

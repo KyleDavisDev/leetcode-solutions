@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -15,7 +15,7 @@
 -- +----+--------+
 
 -- For example, given the above Employee table, the query should return 200 as
--- the second highest salary. If there is no second highest salary, then the 
+-- the second highest salary. If there is no second highest salary, then the
 -- query should return null.
 
 -- Result:

@@ -1,8 +1,8 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
--- The Employee table holds all employees including their managers. 
+-- The Employee table holds all employees including their managers.
 -- Every employee has an Id, and there is also a column for the manager Id.
 
 -- Example:
@@ -16,8 +16,8 @@
 -- | 4  | Max   | 90000  | NULL      |
 -- +----+-------+--------+-----------+
 
--- Given the Employee table, write a SQL query that finds out employees who earn 
--- more than their managers. For the above table, Joe is the only employee who 
+-- Given the Employee table, write a SQL query that finds out employees who earn
+-- more than their managers. For the above table, Joe is the only employee who
 -- earns more than his manager.
 
 -- Result:
@@ -29,11 +29,11 @@
 
 -- --------------------------------------------------------
 
-SELECT 
-    a.Name AS 'Employee' 
-FROM 
+SELECT
+    a.Name AS 'Employee'
+FROM
     Employee AS a,
     Employee AS b
-WHERE 
+WHERE
     a.ManagerId = b.Id
         AND a.Salary > b.Salary

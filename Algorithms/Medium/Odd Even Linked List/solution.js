@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a singly linked list, group all odd nodes together followed by the even
@@ -52,10 +52,10 @@ var oddEvenList = function(head) {
 //Working through given example:
 // if input is 1->2->3->4->5->NULL
 
-// Before the while loop: the variables odd, even, and even_head will be 
+// Before the while loop: the variables odd, even, and even_head will be
 // 1->2->3->4->5->NULL, 2->3->4->5->NULL, and 1->2->3->4->5->NULL respectively.
 
-// First iteration of loop: odd.next=3->4->5->NULL, even.next=4->5->NULL meaning 
+// First iteration of loop: odd.next=3->4->5->NULL, even.next=4->5->NULL meaning
 // that odd=1->3->4->5->NULL, even=2->4->5->NULL
 // then, odd and even get shifted so odd=3->4->5->NULL and even=4->5->NULL
 

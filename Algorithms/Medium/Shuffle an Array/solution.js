@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Shuffle a set of numbers without duplicates.
@@ -66,7 +66,7 @@ Solution.prototype.shuffle = function () {
   return arr;
 }
 
-/** 
+/**
 * Your Solution object will be instantiated and called as such:
 * var obj = Object.create(Solution).createNew(nums)
 * var param_1 = obj.reset()

@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Implement a magic directory with buildDict, and search methods.
@@ -33,7 +33,7 @@ var MagicDictionary = function() {
 };
 
 /**
-* Build a dictionary through a list of words 
+* Build a dictionary through a list of words
 * @param {string[]} dict
 * @return {void}
 */
@@ -44,7 +44,7 @@ MagicDictionary.prototype.buildDict = function(dict) {
 };
 
 /**
-* Returns if there is any word in the trie that equals to the given word after modifying exactly one character 
+* Returns if there is any word in the trie that equals to the given word after modifying exactly one character
 * @param {string} word
 * @return {boolean}
 */
@@ -68,7 +68,7 @@ MagicDictionary.prototype.search = function(word) {
   );
 };
 
-/** 
+/**
 * Your MagicDictionary object will be instantiated and called as such:
 * var obj = Object.create(MagicDictionary).createNew()
 * obj.buildDict(dict)

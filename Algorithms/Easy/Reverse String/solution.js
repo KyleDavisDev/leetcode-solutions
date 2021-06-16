@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Write a function that takes a string as input and returns the string reversed.
@@ -15,7 +15,7 @@
  */
 
 var reverseString = function(s) {
-  //if string has length 0 or 1, we can send back result quickly 
+  //if string has length 0 or 1, we can send back result quickly
   if (s.length == 1 || s.length == 0) {
     return s;
   }

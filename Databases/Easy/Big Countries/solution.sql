@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -13,8 +13,8 @@
 -- | Angola          | Africa     | 1246700    | 20609294     | 100990000     |
 -- +-----------------+------------+------------+--------------+---------------+
 
--- A country is big if it has an area of bigger than 3 million square km or a 
--- population of more than 25 million. Write a SQL solution to output big countries' 
+-- A country is big if it has an area of bigger than 3 million square km or a
+-- population of more than 25 million. Write a SQL solution to output big countries'
 -- name, population and area.
 
 -- For example, according to the above table, we should output:

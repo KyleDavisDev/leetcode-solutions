@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown at https://leetcode.com/static/images/problemset/diagonal_traverse.png

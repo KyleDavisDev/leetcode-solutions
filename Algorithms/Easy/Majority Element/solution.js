@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.

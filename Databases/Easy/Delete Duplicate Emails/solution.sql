@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -23,7 +23,7 @@
 
 -- --------------------------------------------------------
 
-DELETE 
+DELETE
 FROM Person
 Where Id NOT IN (
     SELECT p.Id

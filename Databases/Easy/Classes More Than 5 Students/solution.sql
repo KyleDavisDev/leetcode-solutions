@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -32,11 +32,11 @@
 
 -- --------------------------------------------------------
 
-SELECT 
-    class 
-FROM 
+SELECT
+    class
+FROM
     courses
 GROUP BY
-    class 
+    class
 HAVING
     COUNT(DISTINCT student) > 4;

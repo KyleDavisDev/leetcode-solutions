@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a string containing just the characters '(', ')', '{', '}', '['
@@ -10,12 +10,12 @@
 
 // --------------------------------------------------------
 
-//We are going to create a stack and always compare the top item to the 
+//We are going to create a stack and always compare the top item to the
 //next bit of the string. If the two can form to create a match, we will
-//pop the top item off and go to next string element. At end of day, 
+//pop the top item off and go to next string element. At end of day,
 //check stack size length to see if all matches were formed.
-//We can also cut some of the algo off ahead of time if the string 
-//element is a closing character that doesn't have a match. I.E. "(})}" 
+//We can also cut some of the algo off ahead of time if the string
+//element is a closing character that doesn't have a match. I.E. "(})}"
 //will return false in the second loop iteration because, no matter what
 //is after the '}', we will be unable to find it a match and thus do not
 //have to go through the rest of the algo.
@@ -26,11 +26,11 @@
 var isValid = function(s) {
   //check easy cases first
   if(s.length === 0 || s.length === 1) { return false; }
-  
+
   //split string to array and create stack
   s = s.split('');
   const stack = [];
-  
+
   //loop over string
   for(let i = 0, len = s.length; i < len; i++){
     //concat top stack element with incoming bracket
@@ -45,7 +45,7 @@ var isValid = function(s) {
         //else push to stack
         stack.push(s[i]);
     }
-      
+
   }
 
   return stack.length === 0 ? true : false;

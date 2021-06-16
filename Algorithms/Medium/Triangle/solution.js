@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.

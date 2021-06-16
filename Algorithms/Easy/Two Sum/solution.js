@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -27,7 +27,7 @@ var twoSum = function(nums, target) {
     if (compliments[nums[i]] !== undefined) {
       return [Number(compliments[nums[i]]), Number(i)];
     } else {
-      //push compliment into array with value of index 
+      //push compliment into array with value of index
       compliments[target - nums[i]] = i;
     }
   }

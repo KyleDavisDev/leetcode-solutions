@@ -1,4 +1,4 @@
--- Author: Kyle Bonar
+-- Author: Kyle Davis
 -- Github: github.com/KyleBonar
 
 -- Description:
@@ -28,7 +28,7 @@
 -- --------------------------------------------------------
 
 SELECT
-    DISTINCT 
+    DISTINCT
         p1.Num as ConsecutiveNums FROM Logs p1,
         Logs p2,
         Logs p3

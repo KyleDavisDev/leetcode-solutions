@@ -1,5 +1,5 @@
-// Author: Kyle Bonar
-// Github: github.com/KyleBonar
+// Author: Kyle Davis
+// Github: github.com/KyleDavisDev
 
 // Description:
 // Given a string, find the length of the longest substring without repeating characters.
@@ -36,7 +36,7 @@ var lengthOfLongestSubstring = function(s) {
       start = Math.max(map.get(s[i]), start);
     }
 
-    //get longest by comparing to self vs number of indexes between i and start 
+    //get longest by comparing to self vs number of indexes between i and start
     longest = Math.max(longest, i - start + 1);
 
     //update/assign value of map key
