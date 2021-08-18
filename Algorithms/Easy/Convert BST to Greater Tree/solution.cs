@@ -1,4 +1,4 @@
-﻿// Author: Kyle Davis
+// Author: Kyle Davis
 // Github: github.com/KyleDavisDev
 
 // Description:
@@ -30,23 +30,21 @@
 *     }
 * }
 */
-namespace DefaultNamespace
-{
-  public class Solution {
-    private int sum = 0;
+
+public class solution { 
+  private int sum = 0;
+  
+  public TreeNode ConvertBST(TreeNode root) {
+    if(root == null) return root;
     
-    public TreeNode ConvertBST(TreeNode root) {
-      if(root == null) return root;
-        
-      ConvertBST(root.right);
-        
-      sum += root.val;
-      root.val = sum;
-        
-      ConvertBST(root.left);
-       
-      return root;
-        
-    }
+    ConvertBST(root.right);
+    
+    sum +=  root.val;
+    root.val = sum;
+    
+    ConvertBST(root.left);
+    
+    return root;
+      
   }
 }

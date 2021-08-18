@@ -42,9 +42,6 @@
  *     }
  * }
  */
-
-namespace DefaultNamespace
-{
   public class solution
   {
     public string Tree2str(TreeNode root) {
@@ -61,7 +58,19 @@ namespace DefaultNamespace
         }
       }
         
+                                  
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       return str;
     }
   }
-}
